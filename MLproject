@@ -1,3 +1,5 @@
+name: mlflow-ep-weather
+
 entry_points:
   main:
     command: "python train.py"

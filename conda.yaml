@@ -1,0 +1,8 @@
+name: mlflow-ep-weather
+
+dependencies:
+  - python=3.9
+  - pip:
+    - numpy==2.0.2
+    - scikit-learn==1.5.2
+    - xgboost==2.1.3
