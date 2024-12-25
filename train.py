@@ -17,6 +17,8 @@ def main():
     X, y = load_diabetes(return_X_y=True, as_frame=True)
     X_train, X_test, y_train, y_test = train_test_split(X, y)
 
+    mlflow.set_experiment("ep-test")
+
     # enable auto logging
     # this includes xgboost.sklearn estimators
     mlflow.xgboost.autolog()
